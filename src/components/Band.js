@@ -5,7 +5,7 @@ class Band extends Component {
   render() {
     return(
       <div>
-        Band Component
+        <span>{props.band.text}</span><button>DELETE</button>
       </div>
     );
   }
