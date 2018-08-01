@@ -8,7 +8,7 @@ class BandInput extends Component {
 
   handleOnChange(event) {
     this.setState({
-      bandName: event.target.value,
+      name: event.target.value,
     });
   }
 
@@ -16,7 +16,7 @@ class BandInput extends Component {
     event.preventDefault();
     this.props.addBand(this.state.bandName);
     this.setState({
-      bandName: '',
+      name: '',
     });
   }
 
