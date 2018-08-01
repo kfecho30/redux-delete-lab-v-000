@@ -8,8 +8,7 @@ export default function manageBand(state = {
         bandName: action.payload.text
       }
       return {bands: state.bands.concat(band)}
-
-    case 'DELETE_TODO':
+    case 'DELETE_BAND':
       return {bands: state.bands.filter(band => band.id !== action.payload)}
     default:
       return state;
